@@ -1,0 +1,40 @@
+.mobile-navigation {
+    padding: 1em 0;
+}
+
+.mobile-navigation li {
+    padding: 0.5em 0;
+}
+
+.mobile-navigation .others {
+    padding: 1em 0;
+}
+
+.mobile-navigation li a {
+    display: flex;
+    align-items: center;
+}
+
+.mobile-navigation .close_container a {
+    display: block;
+}
+
+.mobile-navigation li p {
+    margin-left: 0.8em;
+}
+
+.mobile-navigation ul {
+    padding: 0 2em;
+}
+
+.mobile-navigation svg {
+    width: 18px;
+}
+
+.active_link {
+    color: var(--mainstackOrange);
+}
+
+.active_link svg {
+    color: var(--mainstackOrange);
+}

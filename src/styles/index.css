@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'Soehne-buch';
+    src: local('Soehne-buch'), url(../fonts/test-soehne-buch.woff2) format('woff');
+}
+
+@font-face {
+    font-family: 'Soehne-halbfett';
+    src: local('Soehne-halbfett'), url(../fonts/test-soehne-halbfett.woff2) format('woff');
+}
+
+@font-face {
+    font-family: 'Soehne-kraftig';
+    src: local('soehne-kraftig'), url(../fonts/test-soehne-kraftig.woff2) format('woff');
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    font-family: 'Soehne-buch';
+    font-style: normal;
+    padding: 0;
+}
+
+:root {
+    --mainstackOrange: #FF5403;
+    --mainstackBlack: #131316;
+    --mainstackGray: #4D5760;
+}
+
+body {
+    overflow-x: hidden !important;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+input,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+fieldset {
+    border: none;
+    margin-inline: 0;
+    padding-block: 0;
+    padding-inline: 0;
+}
