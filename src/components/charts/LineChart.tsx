@@ -1,8 +1,7 @@
 import {
+    ChartOptions,
     Chart as ChartJS,
-    CategoryScale,
     TimeScale,
-    LinearScale,
     PointElement,
     LineElement,
     Title,
@@ -16,9 +15,7 @@ import { Line } from 'react-chartjs-2';
 
 
 ChartJS.register(
-    CategoryScale,
     TimeScale,
-    LinearScale,
     PointElement,
     LineElement,
     Title,
@@ -30,7 +27,7 @@ interface Props {
 }
 
 
-export const options = {
+export const options: ChartOptions<"line"> = {
     layout: {
         padding: 20
     },
@@ -55,12 +52,9 @@ export const options = {
     color: '#4D5760',
     plugins: {
         legend: {
-            position: 'top',
+            display: false,
         },
-        title: {
-            display: true,
-            text: 'Fuel Usage',
-        },
+
     },
     maintainAspectRatio: false
 
@@ -87,7 +81,7 @@ const LineChart = ({ lineChart }: Props) => {
         labels: lineValues?.map((value: string) => value),
         datasets: [
             {
-                label: 'Fuel Usage',
+                label: 'Summary',
                 data: lineDate?.map((value: string) => value),
                 borderColor: '#FF5403',
                 backgroundColor: '#FF5403',
@@ -100,7 +94,7 @@ const LineChart = ({ lineChart }: Props) => {
 
     return (
         <div className="w-[100%] h-[80vh] relative">
-            <Line type="line" options={options} data={lineChartData} />
+            <Line options={options} data={lineChartData} />
         </div>
     )
 }
