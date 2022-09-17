@@ -109,7 +109,7 @@ const Charts = (): JSX.Element => {
 
     });
     const getChartData = async () => {
-        const res = await fetch('http://test.api.mainstack.io/');
+        const res = await fetch('https://test.api.mainstack.io/');
         return res.json();
     };
     const { data, error, isLoading, status } = useQuery('randomFacts', getChartData);
