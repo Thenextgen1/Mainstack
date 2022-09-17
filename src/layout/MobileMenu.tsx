@@ -14,7 +14,7 @@ const MobileMenu = () => {
 
 
     return (
-        <nav className='p-6'>
+        <nav className='p-6 mr-4'>
             <div className="flex justify-between items-center">
                 <div className='flex items-center'>
                     <p onClick={() => setIsClicked(!isclicked)} className="mr-5">
@@ -28,7 +28,7 @@ const MobileMenu = () => {
 
             {isclicked &&
 
-                <div className='text-mainstackGray absolute top-0 left-0 right-0 bg-white mobile-navigation h-screen flex flex-col'>
+                <div className='text-mainstackGray absolute top-0 left-0 right-0 bg-white z-10 mobile-navigation h-screen flex flex-col'>
                     <div>
                         <ul className='text-mainstackGray'>
                             <li className='close_container'>
