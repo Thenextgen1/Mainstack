@@ -33,11 +33,13 @@ interface graphData {
         top_locations: [
             {
                 country: string,
+                count: string,
                 percent: string
             }
         ],
         top_sources: [{
             source: string,
+            count: string,
             percent: string
         }]
     }
@@ -47,12 +49,14 @@ export interface Istate {
     sources: [
         {
             source: string,
+            count: string,
             percent: string
         }
     ],
     location: [
         {
             country: string,
+            count: string,
             percent: string
         }
     ]
@@ -100,8 +104,8 @@ const Charts = (): JSX.Element => {
     const [chartData, setChartData] = useState<graphData["data"]>({
 
         graph_data: { views: {} },
-        top_locations: [{ country: '', percent: '' }],
-        top_sources: [{ source: '', percent: '' }],
+        top_locations: [{ country: '', count: '', percent: '' }],
+        top_sources: [{ source: '', count: '', percent: '' }],
 
     });
     const getChartData = async () => {
@@ -112,13 +116,15 @@ const Charts = (): JSX.Element => {
     const [lineChart, setLineChart] = useState({});
     const [location, setLocation] = useState<Istate["location"]>([
         {
-            percent: '',
-            country: ''
+            count: '',
+            country: '',
+            percent: ''
         }
     ]);
     const [sources, setSources] = useState<Istate["sources"]>([
         {
             source: '',
+            count: '',
             percent: ''
         }
     ]);
@@ -136,7 +142,6 @@ const Charts = (): JSX.Element => {
     if (error) return <div>Request Failed</div>;
     if (isLoading) return <div>Loading...</div>;
 
-    console.log(location, sources)
 
     return (
         <section>
