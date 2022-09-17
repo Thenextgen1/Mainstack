@@ -14,7 +14,7 @@ const MobileMenu = () => {
 
 
     return (
-        <nav className='p-6 mr-4'>
+        <nav className='p-6 mr-4 lg:px-16 lg:mr-0'>
             <div className="flex justify-between items-center">
                 <div className='flex items-center'>
                     <p onClick={() => setIsClicked(!isclicked)} className="mr-5">

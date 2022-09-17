@@ -3,7 +3,7 @@ import '../styles/home.css'
 
 const Home = () => {
     return (
-        <main className="px-6 mt-3">
+        <main className="px-6 mt-3 pb-12 lg:px-16 main">
             <section>
                 <h2 className="text-xl lg:text-2xl text-mainstackBlack font-bold tracking-[-0.015em]">Good morning, Blessing ⛅️</h2>
                 <div className="flex justify-between items-center">
