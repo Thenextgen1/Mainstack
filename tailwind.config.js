@@ -9,6 +9,12 @@ module.exports = {
         "mainstackOrange": "#FF5403",
         "mainstackGray": "#4D5760",
         "mainstackBlack": "#131316"
+      },
+      fontFamily: {
+        "Soehnebuch": "Soehne-buch",
+        "Soehnehalbfett": "Soehne-halbfett",
+        "Soehnekraftig": "Soehne-kraftig"
+
       }
     },
   },
