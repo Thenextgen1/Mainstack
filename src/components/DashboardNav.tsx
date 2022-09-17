@@ -4,7 +4,7 @@ import { MobileMenu, DesktopMenu } from "../layout";
 const DashboardNav = () => {
     return (
         <header>
-            {useDesktop() >= 1024 ? <DesktopMenu /> : <MobileMenu />}
+            {useDesktop() >= 1180 ? <DesktopMenu /> : <MobileMenu />}
         </header>
     )
 }
