@@ -1,46 +1,44 @@
-# Getting Started with Create React App
+# Mainstack Assessment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* Task 1 - Design Test (Build the dashboard)
 
-## Available Scripts
+## Requirements
 
-In the project directory, you can run:
+NodeJs version 16 or newer installed on your computer.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Clone or download the repository as a zip folder
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* To run, on your command line navigate into project folder; then start with npm.
 
-### `npm test`
+```JavaScript
+cd Mainstack-assessment
+npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Usage
 
-### `npm run build`
+* Task 1 - To view the dashboard:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```JavaScript
+localhost:3000/desiredpage
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Dependencies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The following dependencies were required and used for the assessment:
 
-### `npm run eject`
+* TypeScript - To increase code readability, static type checking.
+* Chart.Js - Used to build the line chart as well as the doughnut chart in the dashboard.
+* React-chartjs-2 - Provides chart.js support for this react application.
+* React-router-dom - Used for routing between pages.
+* Chartjs-adapter-moment: Used for formatting the time string got from the api provided.
+* React-query - Used for server state management and caching.
+* React-icons - Icon library used in the web app.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## What can be improved about this application
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+* For the api used, the graph_data.views object should be an array of objects instead of just a singular object.
+It should be in the format [{time: '', values: ''}, {time: '', values: ''}...] and not {time: values}
+* Assets for the countries flag should be provided in the api if possible.
