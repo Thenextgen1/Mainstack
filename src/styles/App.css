@@ -1,0 +1,24 @@
+@media(min-width: 1180px) {
+    .app {
+        display: flex;
+    }
+
+    .app>header {
+        flex: 1 1 0;
+        width: 0px;
+        border-right: 1px solid #EFF1F6;
+    }
+
+    .app>main {
+        flex: 2.5 1 0;
+        width: 0px;
+    }
+
+}
+
+@media(min-width: 1280px) {
+
+    .app>main {
+        flex: 3 1 0;
+    }
+}

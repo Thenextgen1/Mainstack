@@ -39,3 +39,9 @@
     color: var(--mainstackOrange);
     fill: var(--mainstackOrange);
 }
+
+@media(min-width: 1180px) {
+    .mobile-navigation li {
+        padding: 1em 0;
+    }
+}

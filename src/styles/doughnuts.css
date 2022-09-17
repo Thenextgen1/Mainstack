@@ -1,0 +1,116 @@
+.location_container>li::after {
+    content: '';
+    display: inline-block;
+    border-radius: 10px;
+    width: 10px;
+    height: 10px;
+    margin-left: 0.6em;
+}
+
+
+.location_container>li:nth-of-type(1)::after {
+    background: #599EEA;
+}
+
+.location_container>li::before,
+.sources_container>li::before {
+    margin-right: 0.4em;
+    vertical-align: revert;
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 5px;
+}
+
+.location_container>li:nth-of-type(1)::before {
+    background-image: url(../assets/Nigeria.svg);
+
+}
+
+.location_container>li:nth-of-type(2)::before {
+    background-image: url(../assets/Germany.svg)
+}
+
+.location_container>li:nth-of-type(3)::before {
+    background-image: url(../assets/Ghana.svg);
+}
+
+.location_container>li:nth-of-type(4)::before {
+    background-image: url(../assets/Finland.svg);
+}
+
+.location_container>li:nth-of-type(5)::before {
+    background-image: url(../assets/United\ Kingdom.svg)
+}
+
+.location_container>li:nth-of-type(2)::after {
+    background: #844FF6;
+}
+
+.location_container>li:nth-of-type(3)::after {
+    background: #0FB77A;
+}
+
+.location_container>li:nth-of-type(4)::after {
+    background: #FAB70A;
+}
+
+.location_container>li:nth-of-type(5)::after {
+    background: #F09468;
+}
+
+.sources_container>li {
+    text-transform: capitalize;
+}
+
+.sources_container>li::after {
+    content: '';
+    display: inline-block;
+    border-radius: 10px;
+    width: 10px;
+    height: 10px;
+    margin-left: 0.6em;
+}
+
+.sources_container>li:nth-of-type(1)::after {
+    background: #599EEA;
+}
+
+.sources_container>li:nth-of-type(2)::after {
+    background: #844FF6;
+}
+
+.sources_container>li:nth-of-type(3)::after {
+    background: #0FB77A;
+}
+
+.sources_container>li:nth-of-type(4)::after {
+    background: #FAB70A;
+}
+
+.sources_container>li::before {
+    border-radius: 0px;
+    width: 20px;
+    height: 20px;
+    vertical-align: sub;
+    background-size: auto;
+}
+
+.sources_container>li:nth-of-type(1)::before {
+    background-image: url(../assets/google.svg);
+}
+
+.sources_container>li:nth-of-type(2)::before {
+    background-image: url(../assets/Instagram.svg);
+}
+
+.sources_container>li:nth-of-type(3)::before {
+    background-image: url(../assets/facebook.svg)
+}
+
+.sources_container>li:nth-of-type(4)::before {
+    background-image: url(../assets/Linkedln.svg)
+}

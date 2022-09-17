@@ -6,5 +6,21 @@
     border-radius: 100px;
     padding: 8px 0;
     font-family: inherit;
+    font-weight: 600;
+
+}
+
+.time_filter li:nth-of-type(5) {
+    color: #FF5403;
+    background: #FFDDCD;
+    border: 1px solid #FF5403;
+    border-radius: 100px;
+}
+
+@media(min-width: 1024px) {
+    .time_filter li {
+        padding: 10px 15px;
+    }
+
 
 }
