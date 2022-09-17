@@ -1,0 +1,10 @@
+.time_filter li {
+    font-size: inherit;
+    color: inherit;
+    text-align: center;
+    border: 1px solid #EFF1F6;
+    border-radius: 100px;
+    padding: 8px 0;
+    font-family: inherit;
+
+}

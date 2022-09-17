@@ -35,6 +35,7 @@
     color: var(--mainstackOrange);
 }
 
-.active_link svg {
+.active_link svg path {
     color: var(--mainstackOrange);
+    fill: var(--mainstackOrange);
 }
