@@ -2,6 +2,11 @@
 
 * Task 1 - Design Test (Build the dashboard)
 
+## Project Links
+
+* Live Link: <https://mainstack-tng.netlify.app/>
+* README.md: <https://github.com/Thenextgen1/Mainstack-assessment/blob/main/README.md>
+
 ## Requirements
 
 NodeJs version 16 or newer installed on your computer.
